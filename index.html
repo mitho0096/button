@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #one{
+        background-color: red;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    #two{
+        background-color: yellow;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    #three{
+        background-color: green;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    #four{
+        background-color: blue;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    #five{
+        background-color: orange;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    body{
+        background-color: rgb(130, 124, 124);
+    }
+</style>
+<body id="mitho">
+    <button id="one" onmouseover="handle('red')">RED</button>
+    <button id="two"  onmouseover="handle('YELLOW')">YELLOW</button>
+    <button id="three" onmouseover="handle('green')">GREEN</button>
+    <button id="four" onmouseover="handle('blue')">BLUE</button>
+    <button id="five" onmouseover="handle('orange')">ORANGE</button>
+
+    <script>
+        const handle=(color)=>{
+            var body=document.querySelector('#mitho')
+            body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
